@@ -114,15 +114,13 @@ public class ShopItemController {
         String mostExpensive = new String();
         String result;
 
-
+        highestPrice = shopItemList.get(0).getPrice();
+        mostExpensive = shopItemList.get(0).getName();
         for (int i = 0; i < shopItemList.size(); i++) {
-            highestPrice = shopItemList.get(0).getPrice();
-            mostExpensive = shopItemList.get(0).getName();
-            if (shopItemList.get(i).getPrice() > highestPrice) {
+            if (highestPrice < shopItemList.get(i).getPrice()) {
                 highestPrice = shopItemList.get(i).getPrice();
                 mostExpensive = shopItemList.get(i).getName();
             }
-
         }
         result = "The most expensive item is:\r\n" + mostExpensive + ".";
         model.addAttribute("result", result);
