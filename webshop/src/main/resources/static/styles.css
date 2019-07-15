@@ -1,0 +1,140 @@
+* {
+ font-family: Verdana;
+}
+
+.button-group {
+  height: 25px;
+  text-align: justify;
+  font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+  min-width: 600px;
+}
+
+.button-group div {
+  width: 150px;
+  height: 25px;
+  display: inline-block;
+  background: red;
+}
+
+.button-group:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #a52a2a;
+}
+
+body{
+    width: 60%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+    button {
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+#home-button {
+    padding: 0px;
+    text-align: left;
+    font-size: 45px;
+    color: #6495ed;
+    border-color: #6495ed;
+    background-color: transparent;
+}
+
+hr {
+border: 1px solid;
+border-color: #6495ed;
+}
+#search-for {
+ margin-top: 30px;
+ margin-bottom: 0px;
+ font-size: 25px;
+ color: red;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#shop-items th {
+    font-size: 25px;
+    height: 100px;
+    text-align: center;
+    background-color: cyan;
+    color: black;
+    padding 10px 50px;
+}
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    height: 100px;
+    padding-top: 10px;
+}
+
+    td:nth-child(1) {
+        width: 150px;
+        text-align: left;
+        padding-left: 15px;
+        font-size: 22px;
+    }
+
+    td:nth-child(2) {
+         font-size: 20px;
+         text-align: left;
+         padding-left: 10px;
+        }
+
+    td:nth-child(3) {
+        font-size: 40px;
+        width: 150px;
+    }
+
+    td:nth-child(4) {
+        font-size: 40px;
+        width: 130px;
+}
+
+form {
+position: relative;
+}
+    .search {
+    width: 78%;
+    height: 65px;
+    border: 2px solid;
+    border-color: red;
+    border-radius: 10px;
+    font-size: 40px;
+    }
+
+    #search-button {
+    position: absolute;
+    height: 70px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    }
+
+    #search-button:hover {
+      background-color: #a52a2a;
+    }
+
+p {
+font-size: 45px
+}
